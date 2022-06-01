@@ -1,0 +1,39 @@
+<div class="card card-body">
+    <h3 class="box-title m-b-0">Registro Nueva Persona</h3>
+    <hr>
+    <div class="row">
+        <div class="col-sm-12 col-xs-12">
+            <form [formGroup]="personaForm" (submit)="guardarPersona()">
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-md-8">
+                            <label for="exampleInputEmail1">Rut</label>
+                            <input type="number" class="form-control" id="" placeholder="Rut" formControlName="rut"
+                                required>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="exampleInputEmail1">Dv</label>
+                            <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Dv"
+                                formControlName="dv" required>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Nombre</label>
+                    <input type="text" class="form-control" id="" placeholder="Nombre" formControlName="nombre"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label>Rol</label>
+                    <select name="" id="" class="form-control" formControlName="role">
+                        <option value="ADMIN_ADMIN" class="form-control">Administrador</option>
+                        <option value="ADMIN_USER" class="form-control">Usuario</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-success waves-effect waves-light m-r-10">Submit</button>
+                <button type="submit" class="btn btn-inverse waves-effect waves-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

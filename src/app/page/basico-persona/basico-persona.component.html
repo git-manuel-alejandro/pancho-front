@@ -1,0 +1,80 @@
+<div class="col-8">
+    <h4 class="card-title">Contratos de : <strong>{{persona.nombre}}</strong> , Rut :<strong>{{
+            persona.rut}}-{{ persona.dv}}</strong></h4>
+</div>
+
+<div class="button-group">
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary"
+        (click)="verContratos(1)">Planta</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary"
+        (click)="verContratos(2)">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success"
+        (click)="verContratos(3)">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info"
+        (click)="verContratos(4)">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning" (click)="verContratos(5)">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger"
+        (click)="verContratos(6)">Honorarios</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===1">
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">ASC.DEST.</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">C.SERVICIO</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">BENEFICIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">SANCIONES</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">FELICITACIONES</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">CALIFICACIONES</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-primary">FERIADOS/PERMISOS</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===2">
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-secondary">C.P.R</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===3">
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-success">Profesor</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===4">
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-info">DIBICAR</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===5">
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-warning">DFL1
+        Salud</button>
+</div>
+
+<div class="button-group" *ngIf="contrato ===6">
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+    <button type="button" class="btn waves-effect waves-light btn-outline-danger">HONORARIOS</button>
+</div>
